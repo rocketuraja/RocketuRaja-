@@ -42,8 +42,8 @@ def post_random_image():
         print(f"Failed to post image. Error: {e}")
 
 # --- Scheduling the post ---
-# Schedule the job to run every day at 10:30 AM
-schedule.every().day.at("10:30").do(post_random_image)
+# Schedule the job to run every day 
+schedule.every().day.at("").do(post_random_image)
 
 print("Bot is running and scheduled to post images.")
 
